@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formularios en html</h1>
+    <p>Los formularios en HTML son elementos que permiten a los usuarios ingresar y enviar datos a un servidor para su procesamiento. Los formularios pueden contener varios tipos de campos de entrada, como cuadros de texto, botones de opción, casillas de verificación, menús desplegables y botones de envío.</p>
+
+    <p>La etiqueta form es la base para crear formularios. Se utiliza para agrupar elementos de entrada dentro de un formulario. El atributo action especifica la URL a la que se enviarán los datos del formulario, y el atribuo method define el método HTTP (GET o POST) utilizado para enviar los datos.</p>
+
+    <p>Las etiquetas input son elementos de entrada que permiten al usuario ingresar datos. Los tipos más comunes incluyen text, email, password, checkbox, radio, button y submit. Estas se auto-cerraran.</p>
+
+    <form action="/submit" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <p>La etiqueta <b>type</b> define el tipo de campo de entrada. Por ejemplo, type="text" crea un campo de texto, type="email" crea un campo para ingresar correo electrónico, y type="password" oculta el texto ingresado. <br> 
+        La etiqueta <b>label</b> se utiliza para asociar un texto descriptivo con un campo de entrada, mejorando la accesibilidad del formulario. Su atributo for debe coincidir con el id del campo de entrada correspondiente.</p> 
+        
+        <br><br>
+
+        <label for="email">Correo Electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <p>El atributo <b>id</b> identifica de forma única cada elemento en el documento HTML. Es importante para asociar etiquetas con campos de entrada y para la navegación mediante JavaScript. En otras palabras, el id permite identificar elementos únicos dentro del documento. <br> La el atributo <b>required</b> indica que el campo es obligatorio.</p>
+
+        <br><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br><br>
+
+        <p>La etiqueta <b>textarea</b> permite ingresar texto multilínea. Los atributos <b>rows</b> y <b>cols</b> definen la altura y el ancho del área de texto.</p>
+
+        <br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+
+        <p>Los botones de tipo <b>submit</b> envían los datos del formulario al servidor, mientras que los botones de tipo <b>reset</b> restablecen todos los campos del formulario a sus valores predeterminados.</p>
+
+    </form>
+
+    <p>Otros atributos son <b>minlength</b> y <b>maxlength</b>, que permiten establecer la longitud mínima y máxima de los datos ingresados en un campo de texto. Estos requieren del apoyo del atributo <b>required</b>
+    </p>
+    
+    <div>
+        <br><br><br><br><br><br><br><br><br>
+    </div>
+
+    <form  action="/submit" method="post">
+        <h2>Formulario</h2>
+        <p>Para probar lo que se esta viendo en formularios se crea el siguiente formulario</p>
+
+        <label for="name" borde>Ingrese su nombre:</label>
+        <input type="text" id="name" name="name" placeholder="Nombre"></input>
+
+        <label for="lastname"></label>
+        <input type="text" id="lastname" name="lastname" placeholder="Apellido"></input>
+
+        <br></br>
+        
+
+        <label for="age">Ingrese su edad:</label>
+        <input type="number" id="age" name="age" placeholder="18"></input>
+
+        <br></br>
+
+        <label for="sex">Ingrese su sexo:</label>
+        <input type="text" id="sex" name="sex" placeholder="Hom/Muj"></input>
+
+        <br><br>
+
+        <label for="email">Ingrese su correo electronico:</label>
+        <input type="email" id="email" name="email" placeholder="@"></input>
+        
+        <br><br>
+
+        <label for="password">Ingrese su contraseña:</label>
+        <input type="password" id="password" name="password" placeholder="********"></input>
+
+        <br><br>
+
+        <label for="password2">Verificar contraseña:</label>
+        <input type="password" id="password2" name="password2" placeholder="********"></input>
+
+        <br><br>
+
+        <select name="country" id="country">
+            <option value="mexico">México</option>
+            <option value="usa">Estados Unidos</option>
+            <option value="canada">Canadá</option>
+            <option value="uk">Reino Unido</option>
+            <option value="france">Francia</option>
+        </select>
+
+        <br><br>
+
+        <input type="submit" value="Enviar"></input>
+        <input type="reset" value="Borrar"></input>
+        
+    </form>
+   <p> poner el texto dento de la caja del formulario se utiliza </p>
+</body>
+</html>

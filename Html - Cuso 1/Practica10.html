@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="Inicio">
+        <h2>Inicio</h2>
+        <p>Bienvenido a nuestra página de inicio. Aquí encontrarás información relevante y actualizaciones.</p>
+    </section>
+
+    <h1>Listas y tablas</h1>
+
+    <h2>Listas</h2>
+    <p>Las listas son elementos que permiten organizar información de manera jerárquica.</p>
+    ejemplo:
+    <p>Donde la etiqueta ul hace referencia a una lista no ordenada.</p>
+    <ul>
+        <li>Elemento A</li>
+        <li>Elemento B</li>
+    </ul>
+    <p>Donde la etiqueta ol hace referencia a una lista ordenada.</p>
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+    </ol>
+    <p>La diferencia entre las listas ordenadas y no ordenadas es que las ordenadas siguen una numeración o una estructura que va del primero al ultimo ingresado, mientras que las no ordenadas no tienen un orden específico.</p>
+    <ul>
+        Ejemplo de lista no ordenada de opciones de comida:
+        <li>Pizza</li>
+        <li>Hamburguesa</li>
+        <li>Ensalada</li>
+        <li>Arroz</li>
+    </ul>
+
+    <ol>
+        Ejemplo de lista ordenada de pasos para preparar un sándwich:
+        <li>Tomar dos rebanadas de pan</li>
+        <li>Agregar ingredientes al gusto</li>
+        <li>Cerrar el sándwich con la otra rebanada de pan</li>
+        <li>Disfrutar</li>
+    </ol>
+
+    Existen tras listas más especializadas para ordenar los elementos en orden ya sea alfabetico o numerico, pero estas requieren del apoyo de css o un script para su correcta implementación.
+
+    Un ejemplo de de codigo scritp para ordenas alimentos en forma alfabetica es el siguiente:
+
+    <p>
+    Script <br>
+    const lista = document.getElementById('miLista'); <br>
+    const items = Array.from(lista.querySelectorAll('li')); <br>
+    items.sort((a, b) => a.textContent.localeCompare(b.textContent)); <br>
+    items.forEach(item => lista.appendChild(item)); <br>
+    /Script <br>
+    </p>
+
+    <h2>Tablas</h2>
+    <p>Las tablas son elementos que permiten organizar información en filas y columnas.</p>
+    ejemplo:
+    <table border="5">
+        <tr>
+            <th>Encabezado 1</th>
+            <th>Encabezado 2</th>
+        </tr>
+        <tr>
+            <td>Dato 1</td>
+            <td>Dato 2</td>
+        </tr>
+        <tr>
+            <td>Dato 3</td>
+            <td>Dato 4</td>
+        </tr>
+    </table>
+    
+    <br>
+
+    <p>La etiqueta <b>table</b> hace referencia a coonstruir una tabla. <br>
+    La etiqueta <b>tr</b> hace referencia a una fila de la tabla. <br>
+    La etiqueta <b>th</b> hace referencia a un encabezado de la tabla. <br>
+    La etiqueta <b>td</b> hace referencia a una celda de la tabla.
+    Los <b>border</b> en la tabla sirven para delimitar las celdas y hacerlas visibles, osea delimitar el grosor de las lineas de la tabla.
+    </p>
+
+    <h3>Menus con listas</h3>
+    <p>Los menús son muy comunes en el uso de listas para organizar opciones de navegación en un sitio web. Normalemnte se utilizan listas no ordenadas (ul) para crear menús desplegables o de navegación lateral.</p>
+    ejemplo:
+    
+    <nav>
+        <ul>
+            <li><a href="#Inicio">Inicio</a></li>
+            <li><a href="#Acercade">Acerca de</a></li>
+            <li><a href="#Servicios">Servicios</a></li>
+            <li><a href="#Contactos">Contacto</a></li>
+        </ul>
+    </nav>
+    <p>Tambien usan los anclajes, pero se necesita su seccion</p>
+
+</body>
+</html>

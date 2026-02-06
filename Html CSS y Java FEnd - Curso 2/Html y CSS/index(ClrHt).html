@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Colores de html</h1>
+    <p>Para colocar los colores de html se requiere utilizar etiquetas &lt;span&gt; y &lt;style&gt;
+        dentro de las etiquetas &lt;head&gt;, de las etiquetas &lt;p&gt;, esto nos permite cambiar el color de manera nativa en html.
+    </p>
+
+    <p>Ejemplo:</p>
+    <p style="color: aquamarine">Este texto es de color acuamarino</p>
+    <p> Se utilizo la etiqueta &lt;style&gt; junto con el atributo color para designar el color del texto. Se puede usar los atributos RGB o Hexadecimal también.</p>
+
+    <h2 style="color: rgb(red, green, blue)">Colores RGB</h2>
+    <p>El titulo anterior esta usando los atributos RGB si se implementa correctamente, el atributo rgba esto definira que tan transparente sera el color</p>
+
+    <p style="border: 10px solid black;">Este texto tiene un borde de 10px de grosor y color negro. 
+    <br>
+    Los bordes son otro elemento que se puede realizar en la pagina de manera nativa se puede cambiar el color y el grosor.
+    Las medidas de los bordes se pueden esta definidos en px, pt, cm, mm e in.  </p>
+
+    <p style="color: hsl(255, 100%, 20%);">Este texto tiene un color HSL</p>
+    <p>Tambien se puede hacer por transparencia como lo es el atributo hsla</p>
+    
+    <p style="color: #fa165f">Este es un texto con colores Hexadecimal</p>
+
+    <p>Todos estos cambios son de manera individual en cada parrafo o titulo, pero se puede realizar esto de menera general afectando a todos los parrafos declarados y a los tiitulos que tengan la misma etiqueta.
+    <br>
+    Se declara en el header como 
+    &lt;style&gt;
+        <br>
+        p {
+        <br>    color: blue;
+        }
+        <br>
+        h1 {
+        <br>    color: red;
+        }
+        <br>
+    &lt;/style&gt;
+    <br> 
+    Los parrafos pueden tener colos independientes cada uno asi como los titulos declarados si y solo si se les aigna un ID como atributo.
+    </p>
+</body>
+</html>

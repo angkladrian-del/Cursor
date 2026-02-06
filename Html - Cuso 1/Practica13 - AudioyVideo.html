@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Audio y Video</h1>
+    <p>El audio y videos se pueden utilizar de manera local o en linea las diferencias es que hay una restriccion los audios y videos en linea pueden tener derechos de autor copyright&copy;</p>
+
+    <video src="localvideo.mp4" width="600" controls></video>
+    <p>La etiqueta <b>video</b> se utiliza para incrustar contenido de video en una página web. El atributo <b>src</b> especifica la ruta del archivo de video que se va a reproducir. En este caso, "localvideo.mp4" es un archivo de video almacenado localmente en el servidor o en el mismo directorio que el archivo HTML.<br>
+    El atributo <b>width</b> define el ancho del reproductor de video en píxeles. En este ejemplo, el reproductor de video tendrá un ancho de 600 píxeles. El atributo <b>controls</b> agrega controles de reproducción al reproductor de video, como botones de reproducción, pausa, volumen y barra de progreso, lo que permite a los usuarios interactuar con el video.<br>
+    Los videos extraidos de la red son:
+    </p>
+    <video width="600" controls muted>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.   
+    </video>
+    <p>Es algo similar a cargar el video de youtube pero sin las caracteristicas de la liga de iframe, adicional a esto se tiene la etiqueta <b>muted</b> cuya funcion es iniciar el video sin sonido.
+    hay otros atributos como <b>autoplay</b> que inicia el video automaticamente y <b>loop</b> que hace que el video se repita en un ciclo infinito. Si se quitan los controles el video no podra ser manipulado por el usuario.</p>
+    <br>
+    <p>
+        Otro ejemplo con el video seria:
+    </p>
+    <video width="600" muted controls autoplay loop poster="example.jpg">
+            <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+    <p>En este ejemplo se utilizan los atributos <b>muted</b>, <b>autoplay</b>, <b>loop</b>, y <b>poster</b>. El atributo <b>muted</b> silencia el audio del video, mientras que <b>autoplay</b> lo reproduce automáticamente al cargar la página. El atributo <b>loop</b> hace que el video se repita continuamente, y <b>poster</b> muestra una imagen de portada mientras el video no se reproduce.</p>
+    
+    <h2>Audio</h2>
+
+    <p>El audio tambien presenta las mismas caracteristicas que el video, como las cuales son cargar el audio de manera local o solicitar un audio de internet, pero teniendo cuidado con el copyright.</p>
+
+    <audio src="localaudio.mp3" controls autoplay></audio>
+    <p>La etiqueta <b>audio</b> se utiliza para incrustar contenido de audio en una página web. El atributo <b>src</b> especifica la ruta del archivo de audio que se va a reproducir. En este caso, "localaudio.mp3" es un archivo de audio almacenado localmente en el servidor o en el mismo directorio que el archivo HTML.<br>
+    
+    <p>Esto es un caso de manera local, para un caso de internet</p>
+
+    <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Tu navegador no soporta la etiqueta de audio.
+    </audio>
+    
+    <p>En este ejemplo, se utiliza la etiqueta <b>audio</b> para reproducir el audio, se implementa el atrinbuto <b>type</b> para definir el tipo de archivo de audio que se está utilizando, en este caso "audio/mpeg" para archivos MP3. Es Necesario colocar controls para que el usuario pueda manipular el audio. Solo en cuestiones que sea de fondo en la pagina puede no llevar controles, pero es recomendable siempre colocarlos.
+    </p>
+
+    <audio controls muted loop>
+        <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+        Tu navegador no soporta la etiqueta de audio.
+    </audio>
+    <p>En este caso el audio es libre de querer colocar una cancion de fonde se requiere colocar los elementos de iframe y derechos de autor para no caer en un problema de copyright.</p>
+
+    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/44DCjBHfvn5s6ZfLHpKmBi?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+    <p>La etiqueta <b>allow</b> permite especificar qué permisos se otorgan al iframe. En este caso, se permite el autoplay, escritura en el portapapeles, acceso a medios cifrados, pantalla completa y miniatura de imagen en imagen.</p>
+
+    <footer>
+        <p>Musica por Spotify. Derechos de autor reservados. Spotify&copy;</p>
+</body>
+</html>
