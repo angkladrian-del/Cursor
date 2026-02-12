@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import random
 
 # Valores iniciales del tablero
@@ -167,7 +167,7 @@ while True:
         elif pc_move == 9 and I != "X" and I != "O":
             I = "X"
             break
-=======
+
 import random
 
 # Valores iniciales del tablero
@@ -336,4 +336,4 @@ while True:
         elif pc_move == 9 and I != "X" and I != "O":
             I = "X"
             break
->>>>>>> 7ddc857 (Agregada carpeta Redes)
+
