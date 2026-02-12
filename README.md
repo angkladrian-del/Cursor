@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 Este repositorio es para guardar mis practicas de los lenguajes, para mejorar mi programacion
 
 Html - Cuso 1
